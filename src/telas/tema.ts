@@ -1,4 +1,3 @@
-// src/tema.ts
 export const tema = {
   cores: {
     fundo: "#f9f4ef",
