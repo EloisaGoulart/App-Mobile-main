@@ -11,7 +11,7 @@ import {
   StatusBar,
 } from "react-native";
 
-// Offset para compensar barra de status no Android
+// Offset para barra de status no Android
 const ANDROID_OFFSET =
   Platform.OS === "android" ? StatusBar.currentHeight || 0 : 0;
 
@@ -381,7 +381,7 @@ export default function AstrologiaAPI() {
           )}
         </View>
 
-        {/* 👇 Espaço extra bege para o botão de trilha não cobrir nada */}
+      
         <View style={{ height: 80 }} />
       </ScrollView>
     </KeyboardAvoidingView>
