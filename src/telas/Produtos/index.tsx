@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#f9f4ef",
     paddingHorizontal: 16,
-    paddingTop: 40, // mais afastado do topo
+    paddingTop: 40, 
   },
   header: {
     marginBottom: 16,
