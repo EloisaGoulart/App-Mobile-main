@@ -27,14 +27,14 @@ export default function SobreNos() {
         contentContainerStyle={estilos.scroll}
         showsVerticalScrollIndicator={false}
       >
-        {/* BANNER HECHO CHEIO NA PARTE SUPERIOR */}
+        {/* BANNER */}
         <Image
           source={require("../../assets/hecho.png")}
           style={estilos.heroImage}
           resizeMode="cover"
         />
 
-        {/* HERO / SLOGAN */}
+        {/* HERO */}
         <View style={estilos.heroCard}>
           <Texto style={estilos.heroTitle}>Hecho</Texto>
           <Texto style={estilos.heroSubtitle}>
@@ -100,7 +100,7 @@ export default function SobreNos() {
           </View>
         </View>
 
-        {/* LINHA DE PRODUTOS */}
+        {/* PRODUTOS */}
         <View style={estilos.sectionCard}>
           <Texto style={estilos.sectionLabel}>Coleções</Texto>
           <Texto style={estilos.sectionTitle}>Universos Hecho</Texto>
@@ -113,7 +113,7 @@ export default function SobreNos() {
           </View>
         </View>
 
-        {/* TAROT / BLOCO MÍSTICO – AGORA COM CARD BRANCO ESTILO HECHO */}
+        {/* TAROT */}
         <View style={estilos.tarotCard}>
           <Texto style={estilos.tarotLabel}>Astrologia & Tarot</Texto>
           <Texto style={estilos.tarotTitle}>Rituais que contam histórias</Texto>
@@ -289,7 +289,7 @@ const estilos = StyleSheet.create({
     marginBottom: 8,
   },
 
-  // 🔮 TAROT – agora em card branco, mesma estética das outras APIs
+  // 🔮 TAROT
   tarotCard: {
     backgroundColor: "#ffffff",
     borderRadius: 20,
