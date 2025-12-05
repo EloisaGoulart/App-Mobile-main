@@ -31,7 +31,7 @@ function MenuProdutos() {
   return <Produto {...MockProdutos} />;
 }
 
-// ---------- ÁUDIO (botão fixo no rodapé) ----------
+// ---------- ÁUDIO ----------
 function MenuAudio() {
   const audioSource = require("./src/assets/audio/acdc_highway_to_hell.mp3");
   const player = useAudioPlayer(audioSource);
@@ -86,7 +86,7 @@ function MenuAudio() {
   );
 }
 
-// ---------- PERFIL (Perfil + Astrologia) ----------
+// ---------- PERFIL ----------
 function Perfil() {
   return (
     <ScrollView
@@ -142,7 +142,7 @@ function Perfil() {
   );
 }
 
-// ---------- MENU (Bottom Tabs) ----------
+// ---------- MENU ----------
 function Menu() {
   return (
     <Tab.Navigator
