@@ -164,7 +164,7 @@ export default function PerfilCamera() {
     }
   }
 
-  // ---------- UPLOAD DE FOTO (OPCIONAL) ----------
+  // ---------- UPLOAD DE FOTO ----------
   async function uploadAvatar(uri: string): Promise<string | null> {
     try {
       if (uri.startsWith("http")) return uri;
@@ -199,7 +199,7 @@ export default function PerfilCamera() {
     try {
       setSalvando(true);
 
-      // 1) Validações de campos obrigatórios
+      // Validações de campos obrigatórios
       if (!nome.trim()) {
         Alert.alert("Nome obrigatório", "Por favor, preencha o nome.");
         return;
@@ -225,7 +225,7 @@ export default function PerfilCamera() {
         return;
       }
 
-      // 2) Verifica se email já existe
+      // Verifica email
       const existe = await emailJaExiste(email.trim(), profileId);
       if (existe) {
         Alert.alert(
@@ -235,7 +235,7 @@ export default function PerfilCamera() {
         return;
       }
 
-      // 3) Tenta subir a foto (mas NÃO bloqueia o cadastro se falhar)
+      // subir a foto
       let fotoUrl: string | null = null;
       if (fotoUri) {
         const uploaded = await uploadAvatar(fotoUri);
@@ -255,7 +255,7 @@ export default function PerfilCamera() {
         foto_url: fotoUrl ?? fotoUri ?? null,
       };
 
-      // 4) Salva/atualiza perfil
+      // Salva perfil
       if (profileId) {
         const { error } = await supabase
           .from("profiles")
