@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
   scrollContent: {
     flexGrow: 1,
     paddingHorizontal: 20,
-    paddingTop: 70, // título mais baixo, melhor leitura
+    paddingTop: 70, 
     paddingBottom: 32,
   },
   cardContainer: {
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
 
-  // Avatar / foto
+  // foto
   avatarSection: {
     flexDirection: "row",
     alignItems: "center",
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     fontWeight: "600",
   },
 
-  // Bloco da câmera circular
+  // câmera 
   cameraBlock: {
     alignItems: "center",
     marginBottom: 18,
